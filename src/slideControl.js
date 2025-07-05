@@ -1,5 +1,5 @@
 let slideIndex = 1;
-
+let timerId;
 export function showSlides(n) {
   const slides = document.querySelectorAll(".slides");
   const dots = document.querySelectorAll(".dot");
@@ -13,6 +13,9 @@ export function showSlides(n) {
 
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].classList.add("grey");
+
+  clearTimeout(timerId);
+  timerId = setTimeout(() => nextSlides(), 5000);
 }
 
 export function nextSlides() {
