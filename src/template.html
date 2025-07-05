@@ -3,10 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Template</title>
+    <title>Image Carousel</title>
   </head>
   <body>
-    <h1>Template</h1>
-    <p>Template with all standard loaders as eslint and prettier</p>
+    <div class="slideshow-wrapper">
+      <div class="slides">
+        <div class="number">1/3</div>
+        <img src="imgs/cabin.jpg" alt="Cabin on a Lake" />
+      </div>
+      <div class="slides">
+        <div class="number">2/3</div>
+        <img src="imgs/river.jpg" alt="Park with a river running through it" />
+      </div>
+      <div class="slides">
+        <div class="number">3/3</div>
+        <img src="imgs/grass.jpg" alt="Mountain of grass" />
+      </div>
+
+      <button class="arrow left" value="left">&#10094;</button>
+      <button class="arrow right" value="right">&#10095;</button>
+
+      <div class="dot-wrapper">
+        <button class="dot" value="1"></button>
+        <button class="dot" value="2"></button>
+        <button class="dot" value="3"></button>
+      </div>
+    </div>
   </body>
 </html>

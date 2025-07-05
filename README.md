@@ -1,3 +1,3 @@
 # Template
 
-Template for basic projects
+Image Carousel Practice for the Odin Project
